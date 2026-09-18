@@ -1,1 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="description"
+    content="Keshav Knitwears — quality wholesale sweaters, woolen caps and customizable winter knitwear from Ludhiana, Punjab.">
+
+  <meta property="og:title" content="Keshav Knitwears | Wholesale Winter Knitwear">
+  <meta property="og:description"
+    content="Premium sweaters, woolen caps and customizable winter knitwear for wholesale buyers.">
+
+  <meta property="og:image" content="images/keshav-thumbnail.png">
+  <link rel="icon" type="image/png" href="images/keshav-logo.png">
+
+  <title>Keshav Knitwears | Wholesale Winter Knitwear</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+<style>
+
+:root{
+  --navy:#102a43;
+  --navy2:#173b5c;
+  --cream:#faf7f0;
+  --gold:#d6a84f;
+  --ink:#17212b;
+  --muted:#64748b;
+  --white:#fff;
+  --line:#e7e1d7;
+  --shadow:0 18px 50px rgba(16,42,67,.12);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"DM Sans",sans-serif;
+  color:var(--ink);
+  background:#fff;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.container{
+  width:min(1160px,92%);
+  margin:auto;
+}
+
+/* TOP BAR */
+
+.topbar{
+  background:var(--navy);
+  color:#fff;
+  font-size:13px;
+  padding:9px 0;
+}
+
+.topbar .container{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand-mark{
+  width:52px;
+  height:52px;
+  border:1px solid var(--line);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:#faf7f0;
+}
+
+.logo-mark img{
+  object-fit:cover;
+  width:100%;
+  height:100%;
+}
+
+.brand h1{
+  font-family:"Playfair Display",serif;
+  font-size:22px;
+  letter-spacing:.5px;
+}
+
+.brand small{
+  display:block;
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.links{
+  display:flex;
+  gap:28px;
+  font-weight:600;
+  font-size:14px;
+}
+
+.links a:hover{
+  color:var(--gold);
+}
+
+.nav-cta{
+  background:var(--navy);
+  color:#fff;
+  padding:11px 18px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+  background:linear-gradient(
+    120deg,
+    #f8f3e8 0%,
+    #fff 55%,
+    #edf4f7 100%
+  );
+
+  padding:70px 0 60px;
+  overflow:hidden;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:45px;
+  align-items:center;
+}
+
+.eyebrow{
+  color:#a77921;
+  text-transform:uppercase;
+  letter-spacing:2.5px;
+  font-weight:700;
+  font-size:12px;
+  margin-bottom:14px;
+}
+
+.hero h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(42px,6vw,70px);
+  line-height:1.03;
+  color:var(--navy);
+  margin-bottom:20px;
+}
+
+.hero h2 span{
+  color:#a77921;
+}
+
+.hero p{
+  font-size:17px;
+  color:#536273;
+  max-width:580px;
+  margin-bottom:28px;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:14px 22px;
+  border-radius:8px;
+  font-weight:700;
+  transition:.2s;
+}
+
+.btn-primary{
+  background:var(--navy);
+  color:#fff;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  background:#0b2135;
+}
+
+.btn-outline{
+  border:1px solid var(--navy);
+  color:var(--navy);
+  background:#fff;
+}
+
+.hero-photo{
+  height:510px;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  position:relative;
+}
+
+.hero-photo img{
+  object-position:center;
+}
+
+.hero-badge{
+  position:absolute;
+  left:18px;
+  bottom:18px;
+  background:#fff;
+  padding:13px 17px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  font-weight:700;
+  color:var(--navy);
+}
+
+/* TRUST */
+
+.trust{
+  padding:28px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.trust-item{
+  text-align:center;
+  padding:12px;
+}
+
+.trust-item b{
+  display:block;
+  color:var(--navy);
+  font-size:15px;
+}
+
+.trust-item span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* SECTIONS */
+
+section{
+  padding:82px 0;
+}
+
+.section-head{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 42px;
+}
+
+.section-head h3{
+  font-family:"Playfair Display",serif;
+  color:var(--navy);
+  font-size:40px;
+  line-height:1.1;
+  margin-bottom:10px;
+}
+
+.section-head p{
+  color:var(--muted);
+}
+
+/* PRODUCTS */
+
+.products{
+  background:var(--cream);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 5px 20px rgba(0,0,0,.04);
+  transition:.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow);
+}
+
+.card-img{
+  height:290px;
+  background:#eee;
+}
+
+.card-body{
+  padding:20px;
+}
+
+.tag{
+  display:inline-block;
+  background:#f4ead4;
+  color:#8c641b;
+  border-radius:999px;
+  padding:5px 10px;
+  font-size:11px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.8px;
+  margin-bottom:10px;
+}
+
+.card h4{
+  font-size:20px;
+  color:var(--navy);
+  margin-bottom:7px;
+}
+
+.card p{
+  font-size:14px;
+  color:var(--muted);
+  min-height:66px;
+  margin-bottom:15px;
+}
+
+.card .btn{
+  width:100%;
+  padding:11px 15px;
+}
+
+/* GALLERY */
+
+.photo-gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:230px;
+  gap:16px;
+}
+
+.gallery-item{
+  border-radius:14px;
+  overflow:hidden;
+  background:#f2f2f2;
+  border:1px solid var(--line);
+  box-shadow:0 8px 24px rgba(16,42,67,.08);
+}
+
+.gallery-item.tall{
+  grid-row:span 2;
+}
+
+.gallery-item:hover img{
+  transform:scale(1.04);
+}
+
+.gallery-item img{
+  transition:.35s;
+}
+
+/* ABOUT */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.about-photo{
+  height:500px;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.about h3{
+  font-family:"Playfair Display",serif;
+  color:var(--navy);
+  font-size:42px;
+  line-height:1.1;
+  margin-bottom:15px;
+}
+
+.about p{
+  color:var(--muted);
+  margin-bottom:22px;
+}
+
+.checks{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin:22px 0;
+}
+
+.check{
+  font-weight:600;
+  font-size:14px;
+}
+
+.check::before{
+  content:"✓";
+  display:inline-grid;
+  place-items:center;
+  width:23px;
+  height:23px;
+  border-radius:50%;
+  background:#edf4f7;
+  color:var(--navy);
+  margin-right:8px;
+}
+
+/* CUSTOM */
+
+.custom{
+  background:var(--navy);
+  color:#fff;
+}
+
+.custom-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:center;
+}
+
+.custom h3{
+  font-family:"Playfair Display",serif;
+  font-size:42px;
+  line-height:1.1;
+  margin-bottom:14px;
+}
+
+.custom p{
+  color:#dbe5ee;
+  margin-bottom:24px;
+}
+
+.custom-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.custom-list div{
+  padding:13px 15px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:9px;
+  background:rgba(255,255,255,.05);
+}
+
+.quote-box{
+  background:#fff;
+  color:var(--ink);
+  padding:28px;
+  border-radius:18px;
+}
+
+.quote-box h4{
+  color:var(--navy);
+  font-size:22px;
+  margin-bottom:12px;
+}
+
+.quote-box p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:#f7fafb;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+
+.contact-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:28px;
+}
+
+.contact-card h4{
+  color:var(--navy);
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.contact-card p{
+  color:var(--muted);
+  margin-bottom:16px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#0b2032;
+  color:#dbe5ee;
+  padding:38px 0;
+}
+
+.footer-grid{
+  display:flex;
+  justify-content:space-between;
+  gap:25px;
+  align-items:center;
+}
+
+footer strong{
+  color:#fff;
+  font-family:"Playfair Display",serif;
+  font-size:23px;
+}
+
+footer small{
+  display:block;
+  color:#9fb1c2;
+  margin-top:4px;
+}
+
+/* WHATSAPP BUTTON */
+
+.float-wa{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:30;
+  background:#1f9d55;
+  color:#fff;
+  padding:13px 17px;
+  border-radius:999px;
+  font-weight:800;
+  box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* TABLET */
+
+@media(max-width:850px){
+
+  .links{
+    display:none;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .custom-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:45px;
+  }
+
+  .hero-photo{
+    height:390px;
+  }
+
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .trust-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  section{
+    padding:60px 0;
+  }
+
+}
+
+/* MOBILE */
+
+@media(max-width:560px){
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .photo-gallery{
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows:210px;
+  }
+
+  .gallery-item.tall{
+    grid-row:span 1;
+  }
+
+  .hero h2{
+    font-size:44px;
+  }
+
+  .hero-photo{
+    height:350px;
+  }
+
+  .checks,
+  .custom-list{
+    grid-template-columns:1fr;
+  }
+
+  .topbar .container{
+    justify-content:center;
+    text-align:center;
+  }
+
+  .topbar .right{
+    display:none;
+  }
+
+  .brand h1{
+    font-size:18px;
+  }
+
+  .brand-mark{
+    width:44px;
+    height:44px;
+  }
+
+  .nav-cta{
+    padding:9px 13px;
+    font-size:12px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+  <div class="container">
+
+    <span>
+      Wholesale Winter Knitwear • Bulk Orders • Customization Available
+    </span>
+
+    <span class="right">
+      Dholewal, Ludhiana, Punjab, India
+    </span>
+
+  </div>
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="container">
+
+    <nav>
+
+      <a class="brand" href="#home">
+
+        <div class="brand-mark logo-mark">
+          <img src="images/keshav-logo.png"
+               alt="Keshav Knitwears logo">
+        </div>
+
+        <div>
+          <h1>Keshav Knitwears</h1>
+
+          <small>
+            Quality Products • Wholesale Only
+          </small>
+        </div>
+
+      </a>
+
+
+      <div class="links">
+
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#custom">Customization</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+
+      <a class="nav-cta"
+         href="https://wa.me/919815638174?text=Hello%20Keshav%20Knitwears,%20I%20want%20to%20enquire%20about%20wholesale%20winter%20knitwear."
+         target="_blank">
+
+        Enquire Now
+
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Warmth in Every Thread
+      </div>
+
+      <h2>
+        Premium
+        <span>Winter Knitwear</span>
+        for Wholesale Buyers
+      </h2>
+
+      <p>
+        Explore sweaters, woolen caps and customizable winter knitwear
+        from Keshav Knitwears. Built for retailers, resellers and bulk
+        buyers looking for quality products and flexible requirements.
+      </p>
+
+      <div class="actions">
+
+        <a class="btn btn-primary"
+           href="#products">
+          View Collection →
+        </a>
+
+        <a class="btn btn-outline"
+           href="https://wa.me/919815638174?text=Hello%20Keshav%20Knitwears,%20please%20share%20your%20wholesale%20catalog."
+           target="_blank">
+          WhatsApp Us
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-photo">
+
+      <img src="images/product-1.png"
+           alt="Keshav Knitwears sweaters and woolen caps">
+
+      <div class="hero-badge">
+        Wholesale • Bulk Quantity • Custom Orders
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- TRUST -->
+
+<div class="trust">
+
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <b>✓ Quality Products</b>
+      <span>Warm, comfortable & durable knitwear</span>
+    </div>
+
+    <div class="trust-item">
+      <b>✓ Wide Range</b>
+      <span>Sweaters, caps & customizable styles</span>
+    </div>
+
+    <div class="trust-item">
+      <b>✓ Wholesale Focus</b>
+      <span>Bulk orders for business buyers</span>
+    </div>
+
+    <div class="trust-item">
+      <b>✓ Ludhiana Based</b>
+      <span>Serving wholesale requirements</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Our Collection
+      </div>
+
+      <h3>
+        Wholesale Winter Products
+      </h3>
+
+      <p>
+        Browse our current product styles. Prices are not displayed
+        online — enquire for wholesale pricing, minimum quantities
+        and customization.
+      </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+      <!-- FULL SLEEVE -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img src="images/product-4.png"
+               alt="Full-sleeve sweater">
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="tag">
+            Sweaters
+          </span>
+
+          <h4>
+            Full-Sleeve Sweaters
+          </h4>
+
+          <p>
+            Patterned and classic full-sleeve styles in different
+            colors and designs for wholesale buyers.
+          </p>
+
+          <a class="btn btn-primary"
+             href="https://wa.me/919815638174?text=Hello,%20I%20am%20interested%20in%20Full-Sleeve%20Sweaters."
+             target="_blank">
+
+            Enquire Now
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- HALF SLEEVE -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img src="images/product-7.png"
+               alt="Sleeveless sweater vest">
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="tag">
+            Sweaters
+          </span>
+
+          <h4>
+            Half-Sleeve / Sleeveless
+          </h4>
+
+          <p>
+            Versatile knitwear styles suitable for layering and retail
+            collections. Ask about available designs.
+          </p>
+
+          <a class="btn btn-primary"
+             href="https://wa.me/919815638174?text=Hello,%20I%20am%20interested%20in%20Half-Sleeve%20or%20Sleeveless%20Sweaters."
+             target="_blank">
+
+            Enquire Now
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- CUSTOM -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img src="images/product-6.png"
+               alt="Custom sweater design">
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="tag">
+            Custom
+          </span>
+
+          <h4>
+            Custom Sweaters
+          </h4>
+
+          <p>
+            Discuss your preferred colors, patterns, sleeve styles,
+            sizing and quantities for customized requirements.
+          </p>
+
+          <a class="btn btn-primary"
+             href="https://wa.me/919815638174?text=Hello,%20I%20want%20to%20discuss%20a%20custom%20sweater%20requirement."
+             target="_blank">
+
+            Enquire Now
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- WOOLEN CAPS -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img src="images/product-2.png"
+               alt="Patterned woolen caps">
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="tag">
+            Winter Wear
+          </span>
+
+          <h4>
+            Woolen Caps
+          </h4>
+
+          <p>
+            Warm woolen caps in multiple colors, patterns and designs
+            for retailers and bulk buyers.
+          </p>
+
+          <a class="btn btn-primary"
+             href="https://wa.me/919815638174?text=Hello,%20I%20am%20interested%20in%20Woolen%20Caps%20for%20wholesale."
+             target="_blank">
+
+            Enquire Now
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PATTERNED CAPS -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img src="images/product-3.png"
+               alt="Geometric woolen caps">
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="tag">
+            Caps
+          </span>
+
+          <h4>
+            Printed & Patterned Caps
+          </h4>
+
+          <p>
+            Choose from assorted knitted patterns and color combinations,
+            subject to current availability.
+          </p>
+
+          <a class="btn btn-primary"
+             href="https://wa.me/919815638174?text=Hello,%20please%20share%20available%20Patterned%20Woolen%20Caps."
+             target="_blank">
+
+            Enquire Now
+
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- OTHER KNITWEAR -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img src="images/product-5.png"
+               alt="Knitwear product">
+
+        </div>
+
+        <div class="card-body">
+
+          <span class="tag">
+            Knitwear
+          </span>
+
+          <h4>
+            Other Winter Knitwear
+          </h4>
+
+          <p>
+            Have a specific product requirement? Tell us what you need
+            and we'll discuss available options.
+          </p>
+
+          <a class="btn btn-primary"
+             href="https://wa.me/919815638174?text=Hello,%20I%20have%20a%20winter%20knitwear%20requirement."
+             target="_blank">
+
+            Enquire Now
+
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Product Gallery
+      </div>
+
+      <h3>
+        See Our Latest Styles
+      </h3>
+
+      <p>
+        Real product and brand photos supplied by Keshav Knitwears.
+      </p>
+
+    </div>
+
+
+    <div class="photo-gallery">
+
+      <div class="gallery-item tall">
+        <img src="images/product-2.png"
+             alt="Woolen caps collection">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/product-3.png"
+             alt="Patterned woolen caps">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/product-4.png"
+             alt="Full-sleeve sweater">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/product-5.png"
+             alt="Patterned sweater">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/product-6.png"
+             alt="Custom sweater design">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/product-7.png"
+             alt="Sleeveless sweater vest">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/keshav-thumbnail.png"
+             alt="Keshav Knitwears branded collection thumbnail">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+  <div class="container about-grid">
+
+    <div class="about-photo">
+
+      <img src="images/product-1.png"
+           alt="Keshav Knitwears winter collection">
+
+    </div>
+
+
+    <div>
+
+      <div class="eyebrow">
+        About Keshav Knitwears
+      </div>
+
+      <h3>
+        Quality Knitwear for Growing Businesses
+      </h3>
+
+      <p>
+        Keshav Knitwears is a wholesale winter knitwear business based
+        in Dholewal, Ludhiana, Punjab. We offer sweaters, woolen caps
+        and customizable winter-wear options for retailers and bulk buyers.
+      </p>
+
+
+      <div class="checks">
+
+        <div class="check">
+          Wholesale orders
+        </div>
+
+        <div class="check">
+          Bulk quantities
+        </div>
+
+        <div class="check">
+          Multiple designs
+        </div>
+
+        <div class="check">
+          Customization discussion
+        </div>
+
+      </div>
+
+
+      <a class="btn btn-primary"
+         href="#contact">
+
+        Talk to Us
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CUSTOMIZATION -->
+
+<section class="custom" id="custom">
+
+  <div class="container custom-grid">
+
+    <div>
+
+      <div class="eyebrow"
+           style="color:#e6c36f">
+
+        Made to Your Requirement
+
+      </div>
+
+      <h3>
+        Need a Custom Winter Collection?
+      </h3>
+
+      <p>
+        Share your business requirement with us. We can discuss
+        preferred designs, colors, patterns, sleeve styles, sizing
+        and order quantities.
+      </p>
+
+
+      <div class="custom-list">
+
+        <div>
+          🎨 Colors & patterns
+        </div>
+
+        <div>
+          🧶 Knitwear styles
+        </div>
+
+        <div>
+          📏 Sizes & specifications
+        </div>
+
+        <div>
+          📦 Bulk quantities
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="quote-box">
+
+      <h4>
+        Request Wholesale Details
+      </h4>
+
+      <p>
+        Message us on WhatsApp for product availability,
+        wholesale pricing, minimum quantities and customization options.
+      </p>
+
+      <br>
+
+      <a class="btn btn-primary"
+         href="https://wa.me/919815638174?text=Hello%20Keshav%20Knitwears,%20I%20want%20wholesale%20details.%20Please%20share%20your%20catalog,%20pricing,%20MOQ%20and%20available%20customization%20options."
+         target="_blank">
+
+        Get Wholesale Details →
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Get in Touch
+      </div>
+
+      <h3>
+        Let's Work Together
+      </h3>
+
+      <p>
+        For wholesale enquiries, bulk orders and customization
+        requirements, contact Keshav Knitwears.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-card">
+
+        <h4>
+          📱 WhatsApp / Call
+        </h4>
+
+        <p>
+          9815638174
+        </p>
+
+        <a class="btn btn-primary"
+           href="https://wa.me/919815638174"
+           target="_blank">
+
+          Chat on WhatsApp
+
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h4>
+          📍 Visit / Location
+        </h4>
+
+        <p>
+          Dholewal, Ludhiana, Punjab, India
+        </p>
+
+        <a class="btn btn-outline"
+           href="https://www.google.com/maps/search/?api=1&query=Dholewal%2C%20Ludhiana%2C%20Punjab%2C%20India"
+           target="_blank">
+
+          Open Location
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <p style="text-align:center;margin-top:22px;color:#64748b">
+
+      Instagram:
+
+      <a href="https://instagram.com/Keshav_knitwears_12"
+         target="_blank"
+         style="font-weight:700;color:#102a43">
+
+        @Keshav_knitwears_12
+
+      </a>
+
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container footer-grid">
+
+    <div>
+
+      <strong>
+        Keshav Knitwears
+      </strong>
+
+      <small>
+        Quality Products • Wholesale Only
+      </small>
+
+    </div>
+
+    <div>
+
+      © <span id="year"></span>
+      Keshav Knitwears.
+      All rights reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="float-wa"
+   href="https://wa.me/919815638174?text=Hello%20Keshav%20Knitwears,%20I%20want%20to%20make%20a%20wholesale%20enquiry."
+   target="_blank">
+
+  💬 WhatsApp
+
+</a>
+
+
+<script>
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
